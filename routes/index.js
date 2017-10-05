@@ -1,17 +1,14 @@
 var express = require('express');
 var router = express.Router();
-var util = require('../modules/util');
+var db = require('../modules/db.js');
 
 /* GET home page. */
 router.get('/test', function(req, res) {
-  var key = "abc";
-  cache.set(key, "hello world", function (err, reply) {
-    if(reply){
-      res.send(reply);
-    }else {
-      res.send(err);
-    }
-  });
+    var model_name = "dishes";
+    var where_conditions = {category: "B"};
+    db.getIds(model_name, where_conditions, function (err, reply) {
+       res.send(reply);
+    });
 });
 
 router.get('/', function(req, res) {

@@ -5,7 +5,7 @@ var UAParser = require('ua-parser-js');
 var parser = new UAParser();
 var crypto = require("crypto");
 var async = require("async");
-var local = require('./local');
+var local = require('./local.js');
 
 var util = {};
 

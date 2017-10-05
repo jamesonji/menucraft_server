@@ -1,7 +1,7 @@
 var express = require('express');
 var mysql = require('mysql');
 var redis = require('redis');
-var local = require('./local');
+var local = require('./local.js');
 var _ = require('../libs/underscore-min.js');
 
 var app_config = {};
