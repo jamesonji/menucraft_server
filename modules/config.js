@@ -16,14 +16,14 @@ app_config.initDB = function(env){
 
     switch(env) {
         case 'development':
-            host = 'menucraftdb.cijjg23l7jnd.us-west-1.rds.amazonaws.com';
+            host = 'menucraftdb.czrygyr8r5mz.us-west-2.rds.amazonaws.com';
             database = 'menucraft_db';
             user = local.mysql.user;
             password = local.mysql.password;
             charset = 'utf8mb4';
             break;
         case 'production':
-            host = 'menucraftdb.cijjg23l7jnd.us-west-1.rds.amazonaws.com';
+            host = 'menucraftdb.czrygyr8r5mz.us-west-2.rds.amazonaws.com';
             database = 'menucraft_db';
             user = local.mysql.user;
             password = local.mysql.password;
@@ -39,7 +39,7 @@ app_config.initRedis = function (env) {
     var redisObj = {};
     switch(env) {
         case 'development':
-            redisObj.host = '54.219.171.16';
+            redisObj.host = '34.215.99.159';
             redisObj.port = '6379';
             redisObj.password = local.redis.password;
             break;
