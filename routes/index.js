@@ -12,7 +12,7 @@ router.get('/test', function(req, res) {
 });
 
 router.get('/', function(req, res) {
-  res.render('index', { title: 'World' });
+  res.render('index', { title: 'Menucraft' });
 });
 
 router.get('/get', function(req,res) {
